@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--jquery kirjaston lataaminen ja CSS tiedosto-->
+<script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+<link rel="stylesheet" type="text/css" href="muotoilut.css">
+<title>
+		Tietokanta haku
+</title>
+<HEADER> <h1>Yritystietokannan hakuohjelma</h1></HEADER>
+</head>
+
+<body>
+<div id = "buttons">
+<!--Napin painalluksilla kutsutaan javascript-funktioita.-->
+
+<button class="bu" type="button" onclick="tuote();">Tilatut tuotteet</button>
+<button class="bu" type="button" onclick="osto();">4.11.2014 ostetut tuotteet</button>
+<button class="bu" type="button" onclick="palkka();">Palkkaerittelyt, joissa työntekijän palkka ylittänyt 2800€</button>
+<button class="bu" type="button" onclick="tyhjennys();">Tyhjennä Sivu</button>
+</div>
+<!--Hakutulokset tulostetaan tänne-->
+<div id = "tuote"></div>
+<div id ="osto"></div>
+<div id = "palkka"></div>
+<!--functions.js lataaminen-->
+<script src="function.js"></script>
+</body>
+
+</html>
